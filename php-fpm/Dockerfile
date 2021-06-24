@@ -6,6 +6,7 @@ ARG GROUP_ID
 LABEL maintainer="Vincent Composieux <vincent.composieux@gmail.com>"
 
 RUN apk add --no-cache \
+    dbus-x11 \
     coreutils \
     gettext \
     php8-fpm \
