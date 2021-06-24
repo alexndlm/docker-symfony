@@ -73,6 +73,8 @@ COPY symfony.pool.conf /etc/php8/php-fpm.d/
 
 #RUN usermod -u ${USER_ID} www-data && groupmod -g ${GROUP_ID} www-data
 
+RUN chown -Rf ${USER_ID}:${GROUP_ID} /var/log/php8
+
 WORKDIR /var/www/symfony
 
 USER "${USER_ID}:${GROUP_ID}"
