@@ -65,6 +65,7 @@ services:
         volumes:
             - ./logs/nginx:/var/log/nginx:cached
             - ./symfony:/var/www/symfony:cached
+            - ./nginx/cert:/etc/cloudflare
 
 #    elasticsearch:
 #        container_name: elasticsearch
