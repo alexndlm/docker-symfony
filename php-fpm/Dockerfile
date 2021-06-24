@@ -72,4 +72,6 @@ WORKDIR /var/www/symfony
 
 CMD ["php-fpm8", "-F"]
 
+USER "www-data:www-data"
+
 EXPOSE 9001
