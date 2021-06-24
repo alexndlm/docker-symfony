@@ -71,7 +71,7 @@ COPY symfony.ini /etc/php8/cli/conf.d/
 
 COPY symfony.pool.conf /etc/php8/php-fpm.d/
 
-RUN usermod -u ${USER_ID} www-data && groupmod -g ${GROUP_ID} www-data
+#RUN usermod -u ${USER_ID} www-data && groupmod -g ${GROUP_ID} www-data
 
 WORKDIR /var/www/symfony
 
