@@ -54,6 +54,7 @@ services:
 #                KIBANA_PORT: ${KIBANA_PORT}
         ports:
             - "${NGINX_PORT}:80"
+            - "443:443"
         depends_on:
             - php
         environment:
